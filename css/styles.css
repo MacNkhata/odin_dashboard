@@ -14,6 +14,7 @@ nav {
   padding: 32px 24px 0px 24px;
   background-color: #129cc9;
   color: white;
+  min-height: 100vh;
 }
 
 nav h1 {
@@ -30,10 +31,13 @@ ul {
   grid-row-gap: 24px;
 }
 
+main {
+  min-width: 100vh;
+}
+
 main header {
   width: 100%;
   padding: 0 32px 24px 32px;
-  margin-bottom: 24px;
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   align-items: center;
@@ -136,4 +140,49 @@ main header {
   color: white;
   border: none;
   border-radius: 16px;
+}
+
+.main-content {
+  padding: 48px 32px 0 32px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: #d4d4d4;
+}
+
+.main-content .projects {
+  margin-top: 16px;
+}
+
+.main-content .projects > h4 {
+  margin-bottom: 16px;
+}
+
+.projects .projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.projects-grid .project {
+  height: 100%;
+  padding: 24px 16px;
+  background-color: white;
+  border-left: 12px solid #f4ce43;
+  border-radius: 12px;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+}
+
+.projects-grid .project .text h4 {
+  margin-bottom: 12px;
+}
+
+.projects-grid .project .icons {
+  margin-top: 12px;
+  align-self: self-end;
+  justify-self: self-end;
+  font-size: 24px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
