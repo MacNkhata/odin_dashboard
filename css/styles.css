@@ -6,4 +6,26 @@
 
 body {
   font-family: sans-serif;
+  display: grid;
+  grid-template-columns: 220px 1fr;
+}
+
+nav {
+  padding: 32px 24px 0px 24px;
+  background-color: #129cc9;
+  color: white;
+}
+
+nav h1 {
+  margin-bottom: 40px;
+}
+
+nav .nav-links {
+  margin-bottom: 72px;
+}
+
+ul {
+  list-style: none;
+  display: grid;
+  grid-row-gap: 24px;
 }
