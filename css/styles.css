@@ -143,10 +143,10 @@ main header {
 }
 
 .main-content {
-  padding: 48px 32px 0 32px;
+  padding: 48px 32px 32px 32px;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  background-color: #d4d4d4;
+  background-color: #e8e8e8;
 }
 
 .main-content .projects {
@@ -185,4 +185,67 @@ main header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+}
+
+.side-panel {
+  margin-top: 16px;
+  padding: 0 32px;
+}
+
+.announcements h4 {
+  margin-bottom: 16px;
+}
+
+.announcements .announcements-card {
+  padding: 24px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 4px 4px 14px #999;
+  margin-bottom: 32px;
+}
+
+.announcements-card h5 {
+  margin-bottom: 8px;
+}
+
+.announcements hr {
+  margin: 12px 0;
+  border: none;
+  border-top: 1px solid #d6d6d6;
+  outline: none;
+}
+
+.trending h4 {
+  margin-bottom: 16px;
+}
+
+.trending .trending-card {
+  padding: 24px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 4px 4px 14px #999;
+  margin-bottom: 32px;
+}
+
+.trending-card .trend {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.trending-card .trend:last-child {
+  margin-bottom: 0;
+}
+
+.trend img {
+  border-radius: 50%;
+}
+
+.trend p:first-child {
+  font-size: 14px;
+}
+
+.trend p:last-child {
+  color: #999;
 }
